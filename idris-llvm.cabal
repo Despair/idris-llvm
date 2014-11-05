@@ -24,8 +24,8 @@ Executable idris-llvm
                 , process
                 , transformers
                 , vector
-                , llvm-general == 3.3.8.*
-                , llvm-general-pure == 3.3.8.*
+                , llvm-general
+                , llvm-general-pure
 
   other-modules: IRTS.CodegenLLVM
   cpp-options:   -DIDRIS_LLVM
@@ -48,4 +48,3 @@ Executable idris-llvm
 
   ghc-prof-options: -auto-all -caf-all
   ghc-options:      -threaded -rtsopts -funbox-strict-fields
-
